@@ -6,7 +6,7 @@ mod tests {
     use solana_client::rpc_client::RpcClient; 
     use solana_program::{pubkey::Pubkey, system_instruction::transfer, system_program};
     use std::str::FromStr;
-    use crate::programs::wba_prereq; 
+    use crate::programs::wba_prereq::{WbaPrereqProgram, CompleteArgs, UpdateArgs}; 
 
 
     const RPC_URL: &str = "https://api.devnet.solana.com";
